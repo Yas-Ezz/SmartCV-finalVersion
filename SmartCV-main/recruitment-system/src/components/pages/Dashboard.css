@@ -1,0 +1,187 @@
+/* General Reset */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    box-sizing: border-box;
+  }
+  
+  /* Hero Section */
+  .hero {
+    text-align: center;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.6), 
+        rgba(0, 0, 0, 0.6)
+      ), 
+      url('/assets/hero-bg.png') center/cover no-repeat; /* Overlay + Image */
+    color: #fff;
+    position: relative;
+    height: calc(85vh - 60px); /* Perfect height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem; /* Match the font size */
+    font-weight: bold; /* Bold text */
+    margin-bottom: 2rem; /* Add spacing between the text and the button */
+    text-align: center; /* Center align the text */
+    line-height: 1.4; /* Adjust line height for spacing between the lines */
+    color: white; /* Ensure text is white */
+  }
+  
+  .hero button {
+    padding: 0.8rem 2rem; /* Adjust padding for the button */
+    font-size: 1rem; /* Font size for the button text */
+    font-weight: bold; /* Bold text inside the button */
+    color: #17a2b8; /* Button text color */
+    background-color: white; /* White background */
+    border: 2px solid #17a2b8; /* Border color to match text */
+    border-radius: 5px; /* Slightly rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: all 0.3s ease; /* Smooth hover effect */
+    text-align: center; /* Center the text inside the button */
+  }
+  
+  .hero button:hover {
+    background-color: #17a2b8; /* Hover background color */
+    color: white; /* Hover text color */
+    transform: scale(1.05); /* Slight zoom effect on hover */
+  }
+  
+  /* Blue Tagline Box */
+  .tagline-box {
+    background-color: #17a2b8;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: -5px; /* Slightly overlap with the hero section */
+    position: relative;
+    z-index: 1;
+  }
+  
+  .tagline-box p {
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  /* Features Section */
+  .features-section {
+    padding: 3rem 2rem; /* Add more padding for spacing */
+    background-color: #f9f9f9; /* Subtle background color for separation */
+  }
+  
+  .section-header {
+    text-align: center; /* Center align title and description */
+    margin-bottom: 2rem; /* Space between header and grid */
+  }
+  
+  .section-header h2 {
+    font-size: 2.5rem; /* Large, bold title */
+    font-weight: bold;
+    color: #333; /* Dark gray for contrast */
+    margin: 0;
+  }
+  
+  .section-header p {
+    font-size: 1rem; /* Smaller description text */
+    color: #666; /* Subtle text color */
+    margin: 0.5rem 0 0; /* Space between title and description */
+  }
+  
+  .features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Always 3 columns per row */
+    gap: 2rem; /* Space between boxes */
+    padding: 2rem; /* Padding around the grid */
+    text-align: center;
+  }
+  
+  .feature-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem;
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for elevation */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .feature-box:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+  }
+  
+  .feature-box::before {
+    content: ""; /* Add a decorative image element */
+    width: 50px; /* Icon size */
+    height: 50px; /* Icon size */
+    background-size: contain; /* Ensure the icon fits the box */
+    background-repeat: no-repeat;
+    margin-bottom: 1rem; /* Space below the icon */
+    display: block;
+  }
+  
+  /* Specific icons for each feature */
+  .feature-box:nth-child(1)::before {
+    background-image: url('/icons/ai-matching.png');
+  }
+  
+  .feature-box:nth-child(2)::before {
+    background-image: url('/icons/scoring.png');
+  }
+  
+  .feature-box:nth-child(3)::before {
+    background-image: url('/icons/analytics.png');
+  }
+  
+  .feature-box:nth-child(4)::before {
+    background-image: url('/icons/cv-parsing.png');
+  }
+  
+  .feature-box:nth-child(5)::before {
+    background-image: url('/icons/tracking.png');
+  }
+  
+  .feature-box:nth-child(6)::before {
+    background-image: url('/icons/skill-matching.png');
+  }
+  
+  .feature-box h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333; /* Same as title */
+    margin: 0.5rem 0;
+  }
+  
+  .feature-box p {
+    font-size: 0.9rem;
+    color: #666;
+    text-align: center;
+    margin: 0;
+  }
+    
+  /* Footer */
+  .footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 4rem;
+  }
+  
+
+
+  .footer a {
+    color: #17a2b8;
+    text-decoration: none;
+  }
+  
